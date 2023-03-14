@@ -1,0 +1,14 @@
+<mat-form-field>
+  <mat-select (blur)="onBlur($event)" placeholder="Toppings" [formControl]="toppings" multiple [(ngModel)]="selected">
+    <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+  </mat-select>
+
+ 
+</mat-form-field>
+<br>
+
+value: {{ selected }}
+
+<!-- Copyright 2018 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
